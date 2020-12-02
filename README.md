@@ -27,7 +27,7 @@ To validate your jwt token add the below validation code:
 const tokenHandlerInst = new TokenHandler.TokenHandler();
 const bearerToken = tokenHandlerInst.isBearerToken(jwtToken);
 if (bearerToken)
-    await tokenHandlerInst.verifyAndDecodeToken(bearerToken);
+    tokenHandlerInst.verifyAndDecodeToken(bearerToken);
 ```
 
 To cache jwt_enabled_services in your service add the below code:
